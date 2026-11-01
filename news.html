@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | FUSM Military Police School</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MP</span>
+      <span>FUSM <small>MILITARY POLICE SCHOOL</small></span>
+    </a>
+    <button class="menu-button" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="news.html">News</a>
+      <a href="join.html">Join</a>
+      <a href="ranks.html">Ranks</a>
+      <a href="leadership.html">Leadership</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">STAY INFORMED</p>
+      <h1>NEWS & ANNOUNCEMENTS</h1>
+      <p>Updates, notices, and important information from the Military Police School.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LATEST UPDATES</p>
+        <h2>SCHOOL NEWS</h2>
+        <span class="red-line"></span>
+      </div>
+
+      <div class="news-tools">
+        <input id="newsSearch" type="search" placeholder="Search announcements...">
+        <select id="newsCategory">
+          <option value="all">All Categories</option>
+          <option value="announcement">Announcements</option>
+          <option value="training">Training</option>
+          <option value="notice">Notices</option>
+        </select>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card" data-category="announcement">
+          <span class="tag">ANNOUNCEMENT</span>
+          <p class="news-date">DATE TO BE ADDED</p>
+          <h3>Welcome to the Military Police School</h3>
+          <p>Official school announcements and updates will be published here.</p>
+        </article>
+
+        <article class="news-card" data-category="training">
+          <span class="tag">TRAINING</span>
+          <p class="news-date">DATE TO BE ADDED</p>
+          <h3>Training Updates</h3>
+          <p>Information about upcoming courses and training opportunities.</p>
+        </article>
+
+        <article class="news-card" data-category="notice">
+          <span class="tag">NOTICE</span>
+          <p class="news-date">DATE TO BE ADDED</p>
+          <h3>Important School Notices</h3>
+          <p>Read important notices and reminders for school personnel.</p>
+        </article>
+      </div>
+      <p id="noNews" class="empty-message" hidden>No announcements match your search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">FUSM <span>Military Police School</span></div>
+    <p>VIRTUTIS DISCIPLINA</p>
+    <small>© 2026 Federal United States Military. All rights reserved.</small>
+  </footer>
+</body>
+</html>
