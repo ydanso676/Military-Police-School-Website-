@@ -1,1 +1,1 @@
-# Military-Police-School-Website-
+# Military Police School Website
