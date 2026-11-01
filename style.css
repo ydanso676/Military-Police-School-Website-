@@ -546,10 +546,3 @@ footer small {
 
 }
 
-.rank-insignia {
-  width: 85px;
-  height: 85px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 18px;
-}
