@@ -1022,3 +1022,71 @@ footer small {
   }
 }
 
+
+/* ==============================
+   MOBILE WEBSITE FIX
+================================ */
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    width: 100%;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .section,
+  .leadership-section,
+  .awards-section {
+    width: 100%;
+    padding: 45px 5%;
+  }
+
+  .leadership-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .leader-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leader-insignia img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .hero,
+  .page-hero,
+  .leadership-hero {
+    width: 100%;
+    padding: 55px 5%;
+  }
+
+  .feature-grid,
+  .rank-grid,
+  .news-grid,
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .callout {
+    padding: 45px 5%;
+  }
+
+  footer,
+  .site-footer {
+    width: 100%;
+  }
+
+}
