@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --navy: #101b2b;
@@ -74,38 +74,26 @@ a {
 }
 
 
-/* MAIN NAVIGATION */
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 27px;
 }
 
 .nav a {
-  position: relative;
-  color: #ffffff;
-  font-family: 'Oswald', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: none;
-  padding: 15px 0 20px;
-  border-bottom: none;
-  white-space: nowrap;
-}
-
-.nav a:hover {
   color: #d5dce5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 28px 0;
+  border-bottom: 3px solid transparent;
 }
 
-.nav a.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: #a92535;
+.nav a:hover,
+.nav a.active {
+  color: white;
+  border-color: var(--red);
 }
 
 
