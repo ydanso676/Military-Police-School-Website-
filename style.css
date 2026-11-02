@@ -608,3 +608,124 @@ footer small {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==============================
+   MPS MEDALS & AWARDS
+================================ */
+
+.awards-section {
+  background: var(--navy);
+  color: white;
+  padding: 80px 8%;
+}
+
+.awards-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.awards-header h2 {
+  font-size: clamp(28px, 5vw, 45px);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.awards-header p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.award-card {
+  background: var(--navy-light);
+  border: 1px solid #344258;
+  border-top: 4px solid var(--red);
+  padding: 25px;
+  text-align: center;
+  transition: .2s;
+}
+
+.award-card:hover {
+  border-color: var(--red);
+  transform: translateY(-4px);
+}
+
+.award-number {
+  color: #d45a68;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  display: block;
+  margin: 18px 0 8px;
+}
+
+.award-card h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.award-card p {
+  color: #b8c1cf;
+  font-size: 11px;
+}
+
+/* RIBBON BARS */
+
+.ribbon {
+  height: 36px;
+  width: 180px;
+  max-width: 100%;
+  margin: auto;
+  border: 1px solid #657184;
+  box-shadow: 0 4px 8px #00000040;
+}
+
+/* 15 DISTINCT RIBBON PATTERNS */
+
+.ribbon-01 { background: repeating-linear-gradient(90deg,#102d66 0 30%,#eee 30% 35%,#102d66 35% 65%,#eee 65% 70%,#102d66 70%); }
+.ribbon-02 { background: linear-gradient(90deg,#102d66 0 35%,white 35% 65%,#102d66 65%); }
+.ribbon-03 { background: linear-gradient(90deg,#111 0 30%,#b71927 30% 40%,white 40% 60%,#b71927 60% 70%,#111 70%); }
+.ribbon-04 { background: repeating-linear-gradient(90deg,#102d66 0 20%,#d4af37 20% 25%,#102d66 25% 75%,#d4af37 75% 80%,#102d66 80%); }
+.ribbon-05 { background: linear-gradient(90deg,#102d66 0 25%,white 25% 35%,#d4af37 35% 65%,white 65% 75%,#102d66 75%); }
+.ribbon-06 { background: repeating-linear-gradient(90deg,#102d66 0 45%,white 45% 50%,#102d66 50%); }
+.ribbon-07 { background: linear-gradient(90deg,#102d66 0 45%,white 45% 55%,#102d66 55%); }
+.ribbon-08 { background: linear-gradient(90deg,#102d66 0 25%,#b71927 25% 35%,white 35% 65%,#b71927 65% 75%,#102d66 75%); }
+.ribbon-09 { background: repeating-linear-gradient(90deg,#102d66 0 20%,#d4af37 20% 25%,#102d66 25% 75%,#d4af37 75% 80%,#102d66 80%); }
+.ribbon-10 { background: linear-gradient(90deg,#111 0 20%,white 20% 30%,#b71927 30% 70%,white 70% 80%,#111 80%); }
+.ribbon-11 { background: repeating-linear-gradient(90deg,#102d66 0 30%,white 30% 35%,#102d66 35% 65%,white 65% 70%,#102d66 70%); }
+.ribbon-12 { background: linear-gradient(90deg,#102d66 0 20%,#d4af37 20% 30%,white 30% 40%,#102d66 40% 60%,white 60% 70%,#d4af37 70% 80%,#102d66 80%); }
+.ribbon-13 { background: linear-gradient(90deg,#102d66 0 40%,#b71927 40% 60%,white 60% 70%,#102d66 70%); }
+.ribbon-14 { background: repeating-linear-gradient(90deg,#102d66 0 20%,#d4af37 20% 25%,#102d66 25% 30%,#d4af37 30% 35%,#102d66 35%); }
+.ribbon-15 { background: linear-gradient(90deg,#102d66 0 20%,white 20% 30%,#b71927 30% 40%,white 40% 50%,#102d66 50% 60%,white 60% 70%,#b71927 70% 80%,white 80% 90%,#102d66 90%); }
+
+.awards-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid #344258;
+  color: #d45a68;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
