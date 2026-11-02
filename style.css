@@ -846,3 +846,177 @@ footer small {
   font-size: 11px;
   letter-spacing: 4px;
 }
+
+
+/* ==============================
+   MPS LEADERSHIP PAGE
+================================ */
+
+.leadership-hero {
+  text-align: center;
+  padding: 90px 20px 65px;
+  background: linear-gradient(
+    135deg,
+    #080d16,
+    #101b2b,
+    #080d16
+  );
+  border-bottom: 1px solid #29364a;
+}
+
+.section-label {
+  color: #a92535;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.leadership-hero h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  color: #ffffff;
+  margin: 18px 0;
+  font-weight: 900;
+}
+
+.leadership-hero h1 span {
+  color: #a92535;
+}
+
+.leadership-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #aab5c5;
+  line-height: 1.8;
+}
+
+/* LEADERSHIP GRID */
+
+.leadership-section {
+  padding: 65px 6%;
+  background: #080d16;
+}
+
+.leadership-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  );
+  gap: 25px;
+}
+
+/* LEADERSHIP CARDS */
+
+.leader-card {
+  background: linear-gradient(
+    145deg,
+    #121c2b,
+    #0b111b
+  );
+  border: 1px solid #29364a;
+  border-top: 3px solid #a92535;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.leader-card:hover {
+  transform: translateY(-6px);
+  border-color: #a92535;
+}
+
+/* RANK INSIGNIAS */
+
+.leader-insignia {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leader-insignia img {
+  width: 110px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+/* POSITION */
+
+.leader-position {
+  display: block;
+  color: #a92535;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 20px 0 12px;
+}
+
+/* USERNAME */
+
+.leader-card h2 {
+  color: #ffffff;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+/* MILITARY RANK */
+
+.leader-rank {
+  color: #dce2eb;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* DESCRIPTION */
+
+.leader-description {
+  color: #aab5c5;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* FOOTER */
+
+.site-footer {
+  text-align: center;
+  padding: 35px 20px;
+  background: #060a10;
+  border-top: 1px solid #29364a;
+}
+
+.site-footer p {
+  color: #dce2eb;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.site-footer span {
+  color: #a92535;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .leadership-hero {
+    padding: 65px 20px;
+  }
+
+  .leadership-section {
+    padding: 40px 20px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
