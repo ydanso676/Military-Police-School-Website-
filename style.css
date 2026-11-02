@@ -542,3 +542,69 @@ footer small {
     padding: 25px;
   }
 }
+
+
+
+
+/* SCHOOL RULES PAGE */
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.rule-card {
+  background: #101a2b;
+  border: 1px solid #29364a;
+  border-left: 4px solid #a71924;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.rule-number {
+  color: #d0444d;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.rule-card h3 {
+  color: #ffffff;
+  margin: 12px 0;
+  font-size: 19px;
+}
+
+.rule-card ul {
+  color: #b8c1cf;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.rule-card li {
+  margin-bottom: 5px;
+}
+
+.rules-warning {
+  margin-top: 30px;
+  padding: 25px;
+  background: #21151a;
+  border: 1px solid #713039;
+  border-radius: 8px;
+}
+
+.rules-warning h3 {
+  color: #e0525b;
+  margin-top: 0;
+}
+
+.rules-warning p {
+  color: #d1d5dc;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+}
