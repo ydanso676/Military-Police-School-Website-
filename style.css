@@ -608,3 +608,325 @@ footer small {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==================================
+   FUSM MPS WEBSITE REDESIGN
+================================== */
+
+:root {
+  --navy: #080d16;
+  --navy-light: #121c2b;
+  --red: #a71927;
+  --red-dark: #750f1a;
+  --white: #ffffff;
+  --light: #111a27;
+  --muted: #aeb8c5;
+  --ink: #ffffff;
+}
+
+/* MAIN BACKGROUND */
+
+body {
+  background: #080d16;
+  color: #ffffff;
+}
+
+/* NAVIGATION */
+
+.topbar {
+  background: #05080e;
+  border-bottom: 3px solid #a71927;
+  padding: 0 5%;
+  min-height: 82px;
+}
+
+.brand-mark {
+  background: #a71927;
+  border: 2px solid #d6a1a6;
+  border-radius: 3px;
+}
+
+.nav {
+  gap: 22px;
+}
+
+.nav a {
+  transition: .2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ffffff;
+  border-color: #c51f30;
+}
+
+/* HOMEPAGE HERO */
+
+.hero {
+  min-height: 560px;
+  padding: 85px 8%;
+  background:
+    linear-gradient(90deg, rgba(4, 8, 14, .97), rgba(4, 8, 14, .72)),
+    linear-gradient(135deg, #26364b, #101a29, #080d16);
+  border-bottom: 6px solid #a71927;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 76px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  color: #d32d40;
+}
+
+.hero .eyebrow {
+  color: #e05b68;
+}
+
+.motto {
+  color: #e1e5eb;
+  letter-spacing: 6px;
+}
+
+.hero-description {
+  color: #c0c9d4;
+  line-height: 1.9;
+}
+
+/* BUTTONS */
+
+.button {
+  border-radius: 3px;
+  transition: .2s ease;
+}
+
+.button-red {
+  background: #a71927;
+}
+
+.button-red:hover {
+  background: #d02538;
+  transform: translateY(-2px);
+}
+
+.button-outline {
+  border-color: #8995a5;
+}
+
+.button-outline:hover {
+  background: #ffffff;
+  color: #080d16;
+}
+
+/* ALL CONTENT SECTIONS */
+
+.section {
+  padding: 75px 7%;
+}
+
+.section-heading h2 {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.section-heading .eyebrow {
+  color: #d04452;
+}
+
+.lead {
+  color: #b6c0ce;
+  line-height: 1.9;
+}
+
+.red-line {
+  background: #b51d2c;
+}
+
+/* FEATURE AND LEADERSHIP CARDS */
+
+.feature-card,
+.rank-card,
+.leader-card {
+  background: linear-gradient(145deg, #141e2d, #0b111b);
+  border: 1px solid #303c4e;
+  border-top: 3px solid #a71927;
+  border-radius: 4px;
+  padding: 27px;
+  transition: .2s ease;
+}
+
+.feature-card:hover,
+.rank-card:hover,
+.leader-card:hover {
+  border-color: #a71927;
+  transform: translateY(-4px);
+}
+
+.feature-card h3,
+.rank-card h3,
+.leader-card h3 {
+  color: #ffffff;
+}
+
+.feature-card p,
+.rank-card p,
+.leader-card p {
+  color: #b4bfcd;
+  line-height: 1.8;
+}
+
+.feature-number,
+.rank-number {
+  color: #e04b5a;
+}
+
+.feature-card a {
+  display: inline-block;
+  color: #e05260;
+  font-size: 10px;
+  font-weight: 900;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.feature-card a:hover {
+  color: #ffffff;
+}
+
+/* LEADERSHIP */
+
+.leader-avatar {
+  background: #101a29;
+  border: 2px solid #b51d2c;
+}
+
+/* NEWS */
+
+.news-card {
+  background: linear-gradient(145deg, #141e2d, #0b111b);
+  border: 1px solid #303c4e;
+  border-bottom: 3px solid #a71927;
+  border-radius: 4px;
+}
+
+.news-card h3 {
+  color: #ffffff;
+}
+
+.news-card p:last-child {
+  color: #b4bfcd;
+}
+
+.news-date {
+  color: #8997a9;
+}
+
+.tag {
+  background: #451820;
+  color: #ff9da7;
+}
+
+/* PAGE HEADERS */
+
+.page-hero {
+  background:
+    linear-gradient(120deg, #080d16, #17263b);
+  border-bottom: 5px solid #a71927;
+}
+
+.page-hero h1 {
+  color: #ffffff;
+}
+
+/* RULES PAGE */
+
+.rule-card {
+  background: linear-gradient(145deg, #141e2d, #0b111b);
+  border-color: #303c4e;
+  border-left: 4px solid #a71927;
+}
+
+.rules-warning {
+  background: #211116;
+  border-color: #75303a;
+}
+
+/* CALLOUT */
+
+.callout {
+  background:
+    linear-gradient(120deg, #101b2b, #080d16);
+  border-top: 4px solid #a71927;
+  border-bottom: 4px solid #a71927;
+}
+
+.callout h2 {
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.callout p:not(.eyebrow) {
+  color: #c6ced9;
+}
+
+/* FOOTER */
+
+footer {
+  background: #04070c;
+  border-top: 2px solid #a71927;
+}
+
+.footer-brand {
+  color: #ffffff;
+}
+
+footer p {
+  color: #d04452;
+}
+
+/* MOBILE IMPROVEMENTS */
+
+@media (max-width: 850px) {
+  .topbar {
+    background: #05080e;
+  }
+
+  .nav {
+    background: #080d16;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 65px 7%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .motto {
+    letter-spacing: 3px;
+    font-size: 11px;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+
+  .feature-card,
+  .leader-card,
+  .rank-card {
+    padding: 23px;
+  }
+}
+
